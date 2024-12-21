@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course NFT DEX</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Course NFT DEX</h1>
+        <button id="connectWallet">Connect Wallet</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#marketplace" class="active"><i class="fas fa-store"></i> Marketplace</a></li>
+            <li><a href="#trading"><i class="fas fa-exchange-alt"></i> Trading</a></li>
+            <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="#analytics"><i class="fas fa-chart-line"></i> Analytics</a></li>
+            <li><a href="#wallet"><i class="fas fa-wallet"></i> Wallet</a></li>
+            <li><a href="#create-nft"><i class="fas fa-plus"></i> Create NFT</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="marketplace" class="active">
+            <h2>NFT Marketplace</h2>
+            <input type="search" id="searchNFT" placeholder="Search NFTs...">
+            <div id="nftList"></div>
+        </section>
+
+        <section id="create-nft">
+            <h2>Create New Course NFT</h2>
+            <form id="create-nft-form">
+                <input type="text" id="nft-title" placeholder="Course Title" required>
+                <input type="text" id="nft-description" placeholder="Course Description" required>
+                <input type="number" id="nft-price" placeholder="Price in ETH" step="0.01" required>
+                <button type="submit">Create NFT</button>
+            </form>
+        </section>
+
+        <section id="trading">
+            <h2>Trading Interface</h2>
+            <div class="trade-form">
+                <input type="number" id="tradePrice" placeholder="Set price (ETH)">
+                <button id="buyBtn">Buy</button>
+                <button id="sellBtn">Sell</button>
+            </div>
+            <h3>Transaction History</h3>
+            <table id="transactionHistory">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>NFT ID</th>
+                        <th>Price (ETH)</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section id="portfolio">
+            <h2>Your Portfolio</h2>
+            <div id="portfolioList"></div>
+        </section>
+
+        <section id="analytics">
+            <h2>Market Analytics</h2>
+            <div class="chart-container">
+                <canvas id="priceChart"></canvas>
+            </div>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h3>Total Volume</h3>
+                    <p id="totalVolume">0 ETH</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Unique Owners</h3>
+                    <p id="uniqueOwners">0</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Floor Price</h3>
+                    <p id="floorPrice">0 ETH</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="wallet">
+            <h2>Wallet Integration</h2>
+            <div id="walletInfo"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Course NFT DEX. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
