@@ -5,6 +5,8 @@ Course NFT DEX is a specialized decentralized exchange platform designed specifi
 
 ## Contract Address
 0xB8433C0736AA7a34B463B476051D4C6cEba7AF8F
+!image[![Screenshot (2)](https://github.com/user-attachments/assets/7d9275eb-9e73-4540-a791-a2a81a226305)
+]
 
 ## Project Vision
 Our vision is to revolutionize the educational content marketplace by creating a decentralized ecosystem where:
